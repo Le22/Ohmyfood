@@ -1,3 +1,42 @@
+body {
+  margin: 0;
+}
 
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 24px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  width: 150px;
+  margin: 15px 0;
+}
+
+.home__localisation {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebebeb;
+}
+.home__localisation__icon {
+  margin-right: 15px;
+}
+.home__localisation__text {
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=style.css.map */
