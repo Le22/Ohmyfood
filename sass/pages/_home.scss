@@ -1,15 +1,28 @@
 .home {
     &__localisation {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: darken($color-background, 4.5);
         &__icon {
-            margin-right: 15px;
+            margin-right: $padding-elt;
         }
         &__text {
             font-size: $size-min;
+        }
+    }
+    &__reservation {
+        background-color: $color-background;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: $padding-section;
+        &__subtitle {
+            margin-top: $padding-elt;
+            margin-bottom: $padding-section;
+            text-align: center;
+            font-weight: 300;
         }
     }
 }
