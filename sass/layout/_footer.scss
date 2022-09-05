@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: lighten($color-dark, $amount: 25);
+    padding: 30px;
+    margin-top: 60px;
+    &__logo {
+        filter: brightness(10000%);
+        width: 110px;
+        margin-bottom: 20px;
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        &__link {
+            color: $color-white;
+            margin-top: 8px;
+            &__icon {
+                margin-right: 10px;
+            }
+        }
+    }
+}

@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -33,6 +37,32 @@ button {
 .header__logo {
   width: 150px;
   margin: 15px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #404040;
+  padding: 30px;
+  margin-top: 60px;
+}
+.footer__logo {
+  filter: brightness(10000%);
+  width: 110px;
+  margin-bottom: 20px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav__link {
+  color: #FFF;
+  margin-top: 8px;
+}
+.footer__nav__link__icon {
+  margin-right: 10px;
 }
 
 .home__localisation {
