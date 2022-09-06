@@ -1,0 +1,27 @@
+.menu__card {
+    border-radius: 15px;
+    background-color: $color-white;
+    box-shadow: $shadow;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 15px 0;
+    &__content {
+        &__name {
+            font-weight: 700;
+            font-size: $size-medium;
+            margin: 0;
+        }
+        &__description {
+            margin: 5px 0 2px 0;
+            font-size: $size-min;
+            font-weight: 200;
+        } 
+    } 
+    &__price {
+        font-size: $size-min;
+        font-weight: 700;
+        margin: 0 10px 2px 0;
+    }
+}
