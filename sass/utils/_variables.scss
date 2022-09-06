@@ -4,6 +4,7 @@ $color-ternary: #99E2D0;
 $color-dark: #000;
 $color-white: #FFF;
 $color-background: #F6F6F6;
+$color-gradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 
 $size-min: 14px;
 $size-medium: 16px;
@@ -11,3 +12,5 @@ $size-xl: 24px;
 
 $padding-section: 40px;
 $padding-elt: 15px;
+
+$shadow: 0px 4px 14px 0px rgba(0,0,0,0.15);

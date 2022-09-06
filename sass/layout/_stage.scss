@@ -23,7 +23,7 @@
         background-color: $color-background;
         position: relative;
         left: 12.25px;
-        box-shadow: 0px 4px 14px 0px rgba(0,0,0,0.15);
+        box-shadow: $shadow;
         &__icon {
             font-size: 20px;
             margin: 25px 30px 25px 35px;
@@ -35,7 +35,7 @@
     }
 }
 .stage:last-of-type {
-    margin-bottom: 0;
+    margin-bottom: 20px;
     .stage__content {
         background-color: lighten($color-primary, 35);
         &__icon {

@@ -26,9 +26,12 @@
         }
     }
     &__section {
-        margin: 40px 20px;
+        padding: 40px 20px;
         &__title {
             margin-bottom: 20px;;
         }
+    }
+    &__section:last-of-type {
+        background-color: $color-background;
     }
 }

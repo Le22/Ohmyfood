@@ -1,0 +1,61 @@
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    &__new {
+        font-size: $size-min;
+        position: absolute;
+        margin: 10px;
+        padding: 5px 10px;
+        border-radius: 2px;
+        background-color: $color-ternary;
+        color: darken($color-ternary, 40);
+    }
+    &__elt {
+        box-shadow: $shadow;
+        width: 100%;
+        border-radius: 15px;
+        &__img {
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            height: 175px;
+            object-fit: cover;
+        }
+    }
+    & .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 10px;
+        &__text {
+            font-size: $size-medium;
+            &__name {
+                margin: 0;
+                font-weight: 600;
+            }
+            &__place {
+                margin: 0;
+                font-weight: 200;
+            }
+        }
+        &__like {
+            margin-right: 10px;
+            font-size: $size-xl;
+            & .fa-solid {
+                display: none;
+            }
+        }
+        &__like:hover {
+            color: $color-primary;
+            & .fa-solid {
+                display: block;
+                background-color: $color-gradient;
+            }
+            & .fa-regular {
+                display: none;
+            }
+        }
+    }
+}
