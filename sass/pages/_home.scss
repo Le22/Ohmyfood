@@ -25,4 +25,10 @@
             font-weight: 300;
         }
     }
+    &__section {
+        margin: 40px 20px;
+        &__title {
+            margin-bottom: 20px;;
+        }
+    }
 }
