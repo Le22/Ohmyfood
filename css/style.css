@@ -39,6 +39,12 @@ button {
   width: 150px;
   margin: 15px 0;
 }
+.header__back {
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+  left: 20px;
+}
 
 .footer {
   display: flex;

@@ -8,4 +8,10 @@
         width: 150px;
         margin: 15px 0;
     }
+    &__back {
+        font-size: 18px;
+        color: $color-dark;
+        position: absolute;
+        left: 20px;
+    }
 }
