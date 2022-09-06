@@ -40,22 +40,5 @@
                 font-weight: 200;
             }
         }
-        &__like {
-            margin-right: 10px;
-            font-size: $size-xl;
-            & .fa-solid {
-                display: none;
-            }
-        }
-        &__like:hover {
-            color: $color-primary;
-            & .fa-solid {
-                display: block;
-                background-color: $color-gradient;
-            }
-            & .fa-regular {
-                display: none;
-            }
-        }
     }
 }

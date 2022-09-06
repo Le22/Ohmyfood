@@ -1,0 +1,17 @@
+.like {
+    margin-right: 10px;
+    font-size: $size-xl;
+    & .fa-solid {
+        display: none;
+    }
+}
+.like:hover {
+    color: $color-primary;
+    & .fa-solid {
+        display: block;
+        background-color: $color-gradient;
+    }
+    & .fa-regular {
+        display: none;
+    }
+}
