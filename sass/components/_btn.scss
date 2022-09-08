@@ -1,9 +1,13 @@
 button {
     border: none;
+    cursor: pointer;
     padding: $padding-elt;
     color: $color-white;
     border-radius: 40px;
-    background: $color-primary;
     background: $color-gradient;
     box-shadow: $shadow;
+    &:hover {
+        @include btn-shadow(0.3);
+        @include btn-background;
+    }
 }

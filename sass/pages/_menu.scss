@@ -14,6 +14,9 @@
         &__header {
             display: flex;
             justify-content: space-between;
+            &__title {
+                font-family: 'Shrikhand';
+            }
         }
         &__btn {
             display: flex;
