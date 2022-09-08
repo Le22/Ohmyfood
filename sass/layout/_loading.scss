@@ -1,15 +1,32 @@
-@keyframes loader{
+@keyframes lign{
     0% {
+        opacity: 0;
         transform: scaleX(0);
-    } 50% {
+    } 75% {
         transform: scaleX(1);
     }
     100% {
-        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+@keyframes loader{
+    0% {
+        visibility: visible;
+        opacity: 1;
+    } 75% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
     }
 }
 
 .loading {
+    visibility: hidden;
+    opacity: 0;
+    animation: loader 3s;
     display: flex;
     position: fixed;
     z-index: 100;
@@ -20,14 +37,13 @@
     justify-content: center;
     align-items: center;
     &__logo {
-        display: none;
         width: 200px;
         margin-bottom: 20px;
     }
     &__lign {
         background-color: $color-primary;
-        width: 100%;
-        height: 100vh;
-        animation: loader 4s;
+        width: 70%;
+        height: 5px;
+        animation: lign 3s;
     }
 }
