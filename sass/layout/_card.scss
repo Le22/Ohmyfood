@@ -1,13 +1,29 @@
+@keyframes validation {
+    0% {
+        width: 0;
+    } 100% {
+        width: 67px;
+    }
+}
+@keyframes validation__icon {
+    0% {
+        transform:rotateX(10)
+    } 100% {
+        transform: rotateX(1);
+    }
+}
+
 .menu__card {
     border-radius: 15px;
     background-color: $color-white;
     box-shadow: $shadow;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin: 15px 0;
     &__content {
+        padding: 10px;
+        padding-right: 0;
         &__name {
             font-weight: 700;
             font-size: $size-medium;
@@ -20,8 +36,32 @@
         } 
     } 
     &__price {
+        padding: 10px;
+        padding-right: 0;
         font-size: $size-min;
         font-weight: 700;
         margin: 0 10px 2px 0;
+    }
+    &__validation {
+        transform-origin: 100% 50%;
+        transform: scaleX(0);
+        height: 67px;
+        width: 0;
+        &__icon {
+            font-size: $size-xl;
+            color: $color-white;
+        }
+    }
+    &:active &__validation {
+        animation: validation 1s;
+        background-color: $color-ternary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 15px 15px 0;
+        width: 67px;
+        &__icon {
+            animation: validation__icon 1s;
+        }
     }
 }

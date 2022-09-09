@@ -43,3 +43,9 @@
         }
     }
 }
+
+@media (min-width: 992px) {
+    .stage {
+        flex: 0.3;
+    }
+}

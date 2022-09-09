@@ -1,9 +1,9 @@
 .header {
     width: 100%;
+    box-shadow: $shadow;
     display: flex;
     justify-content: center;
     align-items: center;
-    // penser a ajouter shadow
     &__logo {
         width: 150px;
         margin: 15px 0;

@@ -35,3 +35,11 @@
         background-color: $color-background;
     }
 }
+
+@media (min-width: 992px) {
+    .home__section__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

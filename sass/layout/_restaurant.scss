@@ -4,6 +4,7 @@
     background-color: $color-white;
     align-items: flex-end;
     margin-bottom: 20px;
+    color: $color-dark;
     &__new {
         font-size: $size-min;
         position: absolute;
@@ -39,6 +40,16 @@
                 margin: 0;
                 font-weight: 200;
             }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .restaurant {
+        margin-left: 2%;
+        flex: 0.3;
+        &:first-child {
+            margin-left: 0;
         }
     }
 }
