@@ -2,5 +2,5 @@
     background: linear-gradient(0deg, lighten($color1 , 5) 0%, lighten($color2 , 5) 100%)
 }
  @mixin btn-shadow ($intensitie: 0.15) {
-    box-shadow: 0px 4px 14px 0px rgba(0,0,0,$intensitie);;
+    box-shadow: 0px 4px 14px 0px rgba(0,0,0,$intensitie);
  }
