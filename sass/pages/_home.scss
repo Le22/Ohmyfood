@@ -42,20 +42,17 @@
         &__title {
             margin-bottom: 20px;;
         }
+        &__list {
+            @include desktop-only {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+        }
     }
 
     // dernière section (les restaurants)
     &__section:last-of-type {
         background-color: $color-background;
-    }
-}
-
-
-// breakpoint
-@media (min-width: 992px) {
-    .home__section__list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
     }
 }

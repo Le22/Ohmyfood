@@ -53,16 +53,15 @@
             }
         }
     }
-}
-
-
-// breakpoint
-@media (min-width: 992px) {
-    .restaurant {
-        margin-left: 2%;
-        flex: 0.3;
-        &:first-child {
-            margin-left: 0;
+    & {
+        @include desktop-only {
+            & {
+                margin-left: 2%;
+                flex: 0.3;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
         }
-    }
+    } 
 }

@@ -30,13 +30,12 @@
         opacity: 1;
     }
 
-    &:hover {
-        & .fa-solid {
-            opacity: 1; // apparition pleine
-        }
-        & .fa-regular {
-            transition: 0.5s opacity ease-in-out;
-            opacity: 0; // disparition bordure
-        }
+    &:active {
+        @include like;
     }
+    &:hover {
+        @include desktop-only {
+            @include like;
+        }
+    } 
 }

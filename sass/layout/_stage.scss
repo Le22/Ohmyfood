@@ -43,6 +43,13 @@
             font-size: $size-medium;
         }
     }
+    & {
+        @include desktop-only {
+            & {
+                flex: 0.3;
+            }
+        }
+    }
 }
 
 // dernière étape
@@ -55,13 +62,5 @@
         &__icon {
             color: $color-primary;
         }
-    }
-}
-
-
-// breakpoint
-@media (min-width: 992px) {
-    .stage {
-        flex: 0.3;
     }
 }

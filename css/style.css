@@ -65,15 +65,25 @@ button:hover {
   transition: 0.5s opacity ease-in-out;
   opacity: 1;
 }
-.like:hover .fa-solid {
+.like:active .fa-solid {
   opacity: 1;
 }
-.like:hover .fa-regular {
+.like:active .fa-regular {
   transition: 0.5s opacity ease-in-out;
   opacity: 0;
 }
+@media screen and (min-width: 992px) {
+  .like:hover .fa-solid {
+    opacity: 1;
+  }
+  .like:hover .fa-regular {
+    transition: 0.5s opacity ease-in-out;
+    opacity: 0;
+  }
+}
 
 .header {
+  position: relative;
   width: 100%;
   box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15);
   display: flex;
@@ -153,6 +163,11 @@ button:hover {
 .stage__content__text {
   font-size: 16px;
 }
+@media screen and (min-width: 992px) {
+  .stage {
+    flex: 0.3;
+  }
+}
 
 .stage:last-of-type {
   margin-bottom: 20px;
@@ -164,11 +179,6 @@ button:hover {
   color: #9356DC;
 }
 
-@media (min-width: 992px) {
-  .stage {
-    flex: 0.3;
-  }
-}
 .restaurant {
   display: flex;
   flex-direction: column;
@@ -215,8 +225,7 @@ button:hover {
   margin: 0;
   font-weight: 200;
 }
-
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .restaurant {
     margin-left: 2%;
     flex: 0.3;
@@ -225,6 +234,7 @@ button:hover {
     margin-left: 0;
   }
 }
+
 @keyframes card {
   0% {
     transform: translateY(100px);
@@ -300,6 +310,19 @@ button:hover {
 }
 .menu__card:active .menu__card__validation__icon {
   transform: rotate(0deg);
+}
+@media screen and (min-width: 992px) {
+  .menu__card:hover .menu__card__validation {
+    background-color: #99E2D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px 15px 0;
+    width: 67px;
+  }
+  .menu__card:hover .menu__card__validation__icon {
+    transform: rotate(0deg);
+  }
 }
 
 .card_1 {
@@ -401,17 +424,17 @@ button:hover {
 .home__section__title {
   margin-bottom: 20px;
 }
-.home__section:last-of-type {
-  background-color: #F6F6F6;
-}
-
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .home__section__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 }
+.home__section:last-of-type {
+  background-color: #F6F6F6;
+}
+
 .menu__img {
   width: 100%;
   height: 250px;

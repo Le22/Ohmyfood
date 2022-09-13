@@ -73,14 +73,11 @@
 
     // clic de la carte -> joué la validation du menu
     &:active &__validation {
-        background-color: $color-ternary;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0 15px 15px 0;
-        width: 67px;
-        &__icon {
-            transform: rotate(0deg);
+        @include validation;
+    }
+    &:hover &__validation {
+        @include desktop-only {
+            @include validation;
         }
     }
 }
