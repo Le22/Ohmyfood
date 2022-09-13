@@ -176,6 +176,7 @@ button:hover {
   align-items: flex-end;
   margin-bottom: 20px;
   color: #000;
+  border-radius: 15px;
 }
 .restaurant__new {
   font-size: 14px;
