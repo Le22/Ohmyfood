@@ -1,9 +1,15 @@
+// Style page restaurant
+
 .menu {
+
+    // image resto
     &__img {
         width: 100%;
         height: 250px;
         object-fit: cover;
     }
+
+    // resto
     &__elt {
         border-radius: 40px 40px 0 0;
         background-color: $color-background;
@@ -11,13 +17,19 @@
         padding: 40px 20px;
         top: -100px;
         margin-bottom: -100px;
+
+        // presentation resto
         &__header {
             display: flex;
             justify-content: space-between;
+
+            // nom resto
             &__title {
                 font-family: 'Shrikhand';
             }
         }
+
+        // btn reservation
         &__btn {
             display: flex;
             justify-content: center;
@@ -29,6 +41,8 @@
             }
         }
     }
+
+    // menu resto
     &__content {
         &__title {
             font-weight: 400;

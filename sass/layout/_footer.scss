@@ -1,3 +1,5 @@
+// Style footer
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -5,11 +7,15 @@
     align-items: flex-start;
     background-color: lighten($color-dark, $amount: 25);
     padding: 30px;
+
+    // logo ohmyfood
     &__logo {
         filter: brightness(10000%);
         width: 110px;
         margin-bottom: 20px;
     }
+
+    // navigation
     &__nav {
         display: flex;
         flex-direction: column;

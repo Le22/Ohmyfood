@@ -1,7 +1,11 @@
+// Style étapes
+
 .stage {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+
+    // numéro étape
     &__number {
         background-color: $color-primary;
         font-size: $size-medium;
@@ -15,6 +19,8 @@
         position: absolute;
         z-index: 10;
     }
+
+    // contenu étape
     &__content {
         border-radius: 20px;
         display: flex;
@@ -24,18 +30,26 @@
         position: relative;
         left: 12.25px;
         box-shadow: $shadow;
+
+        // logo étape
         &__icon {
             font-size: 20px;
             margin: 25px 30px 25px 35px;
             color: lighten($color-dark, 50);
         }
+
+        // descriotion
         &__text {
             font-size: $size-medium;
         }
     }
 }
+
+// dernière étape
 .stage:last-of-type {
     margin-bottom: 20px;
+
+    // changement couleur
     .stage__content {
         background-color: lighten($color-primary, 35);
         &__icon {
@@ -44,6 +58,8 @@
     }
 }
 
+
+// breakpoint
 @media (min-width: 992px) {
     .stage {
         flex: 0.3;

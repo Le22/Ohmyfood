@@ -1,3 +1,5 @@
+// Style liste des restaurants
+
 .restaurant {
     display: flex;
     flex-direction: column;
@@ -5,6 +7,8 @@
     align-items: flex-end;
     margin-bottom: 20px;
     color: $color-dark;
+
+    // nouveau resto
     &__new {
         font-size: $size-min;
         position: absolute;
@@ -14,6 +18,8 @@
         background-color: $color-ternary;
         color: darken($color-ternary, 40);
     }
+
+    // resto
     &__elt {
         box-shadow: $shadow;
         width: 100%;
@@ -25,11 +31,15 @@
             object-fit: cover;
         }
     }
+
+    // contenu resto
     & .content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 15px 10px;
+
+        // descritpion resto
         &__text {
             font-size: $size-medium;
             &__name {
@@ -44,6 +54,8 @@
     }
 }
 
+
+// breakpoint
 @media (min-width: 992px) {
     .restaurant {
         margin-left: 2%;

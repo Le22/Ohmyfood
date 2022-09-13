@@ -1,27 +1,33 @@
-@keyframes validation {
+// Style carte du menu
+
+// apparition de la carte en translation
+@keyframes card {
     0% {
-        width: 0;
+        transform: translateY(100px);
+    } 60% {
+        transform: translateY(0);
+    } 80% {
+        transform: translateY(10px);
     } 100% {
-        width: 67px;
-    }
-}
-@keyframes validation__icon {
-    0% {
-        transform:rotateX(10)
-    } 100% {
-        transform: rotateX(1);
+        transform: translateY(0);
     }
 }
 
+// carte
 .menu__card {
+    cursor: pointer;
     border-radius: 15px;
     background-color: $color-white;
     box-shadow: $shadow;
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
+    overflow: hidden;
     margin: 15px 0;
+    animation: card 1s ease-in-out;
+
+    // contenu titre + description
     &__content {
+        flex-grow: 1;
         padding: 10px;
         padding-right: 0;
         &__name {
@@ -35,6 +41,8 @@
             font-weight: 200;
         } 
     } 
+
+    // prix
     &__price {
         padding: 10px;
         padding-right: 0;
@@ -42,18 +50,26 @@
         font-weight: 700;
         margin: 0 10px 2px 0;
     }
+
+    // validation du menu
     &__validation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transform-origin: 100% 50%;
-        transform: scaleX(0);
         height: 67px;
         width: 0;
+        transition: all 1s ease-in-out;
         &__icon {
             font-size: $size-xl;
             color: $color-white;
+            transform: rotate(180deg);
+            transition: all 1s ease-in-out;
         }
     }
+
+    // clic de la carte -> joué la validation du menu
     &:active &__validation {
-        animation: validation 1s;
         background-color: $color-ternary;
         display: flex;
         justify-content: center;
@@ -61,7 +77,18 @@
         border-radius: 0 15px 15px 0;
         width: 67px;
         &__icon {
-            animation: validation__icon 1s;
+            transform: rotate(0deg);
         }
     }
+}
+
+// arrivé des cartes en différé
+.card_1 {
+    animation-delay: 0s;
+}
+.card_2 {
+    animation-delay: 0.2s;
+}
+.card_3 {
+    animation-delay: 0.4s;
 }

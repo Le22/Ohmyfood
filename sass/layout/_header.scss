@@ -1,13 +1,20 @@
+// Style header
+
 .header {
     width: 100%;
     box-shadow: $shadow;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $color-white;
+
+    // logo ohmyfood
     &__logo {
         width: 150px;
         margin: 15px 0;
     }
+
+    // icon retour
     &__back {
         font-size: 18px;
         color: $color-dark;

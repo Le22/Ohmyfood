@@ -1,3 +1,5 @@
+// Style btn
+
 button {
     border: none;
     cursor: pointer;
@@ -6,8 +8,9 @@ button {
     border-radius: 40px;
     background: $color-gradient;
     box-shadow: $shadow;
+
     &:hover {
-        @include btn-shadow(0.3);
-        @include btn-background;
+        @include btn-shadow(0.3); // changement shadow
+        @include btn-background; // changement background
     }
 }

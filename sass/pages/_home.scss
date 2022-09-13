@@ -1,16 +1,26 @@
+// Style page accueil
+
 .home {
+
+    // localisation
     &__localisation {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: darken($color-background, 4.5);
+
+        // icon loc
         &__icon {
             margin-right: $padding-elt;
         }
+
+        // nom loc
         &__text {
             font-size: $size-min;
         }
     }
+
+    // presentation
     &__reservation {
         background-color: $color-background;
         display: flex;
@@ -25,17 +35,23 @@
             font-weight: 300;
         }
     }
+
+    // section
     &__section {
         padding: 40px 20px;
         &__title {
             margin-bottom: 20px;;
         }
     }
+
+    // dernière section (les restaurants)
     &__section:last-of-type {
         background-color: $color-background;
     }
 }
 
+
+// breakpoint
 @media (min-width: 992px) {
     .home__section__list {
         display: flex;

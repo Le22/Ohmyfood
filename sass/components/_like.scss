@@ -1,3 +1,5 @@
+// Style icon like
+
 .like {
     margin-right: 10px;
     font-size: $size-xl;
@@ -7,6 +9,8 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
+
+    // icon pleine
     & .fa-solid {
         position: relative;
         left: -24px;
@@ -18,17 +22,21 @@
         display: inline;
         transition: 1s opacity ease-in-out;
         opacity: 0;
-    } & .fa-regular {
-        transition: 0.5s opacity ease-in-out;
-        opacity: 1;
     }
-}
-.like:active {
-    & .fa-solid {
-        opacity: 1;
-    }
+
+    // icon bordure
     & .fa-regular {
         transition: 0.5s opacity ease-in-out;
-        opacity: 0;
+        opacity: 1;
+    }
+
+    &:hover {
+        & .fa-solid {
+            opacity: 1; // apparition pleine
+        }
+        & .fa-regular {
+            transition: 0.5s opacity ease-in-out;
+            opacity: 0; // disparition bordure
+        }
     }
 }

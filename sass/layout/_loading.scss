@@ -1,3 +1,6 @@
+// Style chargement de la page d'accueil
+
+// animation ligne de chargement
 @keyframes lign{
     0% {
         opacity: 0;
@@ -9,6 +12,8 @@
         opacity: 1;
     }
 }
+
+// animation page de chargement
 @keyframes loader{
     0% {
         visibility: visible;
@@ -23,6 +28,7 @@
     }
 }
 
+// page de chargmement
 .loading {
     visibility: hidden;
     opacity: 0;
@@ -36,10 +42,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    // logo ohmyfood
     &__logo {
         width: 200px;
         margin-bottom: 20px;
     }
+
+    // ligne
     &__lign {
         background-color: $color-primary;
         width: 70%;

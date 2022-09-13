@@ -17,10 +17,12 @@ a {
 h1 {
   text-align: center;
 }
-
-h1, h2 {
+h1, h1 h2 {
   font-size: 24px;
   margin: 0;
+}
+h1, h1 p, h1 h2, h1 h2 p {
+  color: #000;
 }
 
 button {
@@ -63,11 +65,10 @@ button:hover {
   transition: 0.5s opacity ease-in-out;
   opacity: 1;
 }
-
-.like:active .fa-solid {
+.like:hover .fa-solid {
   opacity: 1;
 }
-.like:active .fa-regular {
+.like:hover .fa-regular {
   transition: 0.5s opacity ease-in-out;
   opacity: 0;
 }
@@ -78,6 +79,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #FFF;
 }
 .header__logo {
   width: 150px;
@@ -222,32 +224,33 @@ button:hover {
     margin-left: 0;
   }
 }
-@keyframes validation {
+@keyframes card {
   0% {
-    width: 0;
+    transform: translateY(100px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(10px);
   }
   100% {
-    width: 67px;
-  }
-}
-@keyframes validation__icon {
-  0% {
-    transform: rotateX(10);
-  }
-  100% {
-    transform: rotateX(1);
+    transform: translateY(0);
   }
 }
 .menu__card {
+  cursor: pointer;
   border-radius: 15px;
   background-color: #FFF;
   box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.15);
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
+  overflow: hidden;
   margin: 15px 0;
+  animation: card 1s ease-in-out;
 }
 .menu__card__content {
+  flex-grow: 1;
   padding: 10px;
   padding-right: 0;
 }
@@ -269,17 +272,21 @@ button:hover {
   margin: 0 10px 2px 0;
 }
 .menu__card__validation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform-origin: 100% 50%;
-  transform: scaleX(0);
   height: 67px;
   width: 0;
+  transition: all 1s ease-in-out;
 }
 .menu__card__validation__icon {
   font-size: 24px;
   color: #FFF;
+  transform: rotate(180deg);
+  transition: all 1s ease-in-out;
 }
 .menu__card:active .menu__card__validation {
-  animation: validation 1s;
   background-color: #99E2D0;
   display: flex;
   justify-content: center;
@@ -288,7 +295,19 @@ button:hover {
   width: 67px;
 }
 .menu__card:active .menu__card__validation__icon {
-  animation: validation__icon 1s;
+  transform: rotate(0deg);
+}
+
+.card_1 {
+  animation-delay: 0s;
+}
+
+.card_2 {
+  animation-delay: 0.2s;
+}
+
+.card_3 {
+  animation-delay: 0.4s;
 }
 
 @keyframes lign {
