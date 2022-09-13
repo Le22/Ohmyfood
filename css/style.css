@@ -314,6 +314,10 @@ button:hover {
   animation-delay: 0.4s;
 }
 
+.card_4 {
+  animation-delay: 0.6s;
+}
+
 @keyframes lign {
   0% {
     opacity: 0;
