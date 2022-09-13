@@ -1,32 +1,60 @@
+<!-- 
+    Louis-Étienne Girard
+    ====================
+         Projet 3
+-->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ohmyfood | À la française</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Iocn -->
     <script src="https://kit.fontawesome.com/0ec9c38a23.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- Header -->
     <header class="header">
         <a href="/" class="header__back"><i class="fa-solid fa-arrow-left"></i></a>
         <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood">
     </header>
+
+    <!-- Le restaurant -->
     <main class="menu">
+
+        <!-- Image du restaurant -->
         <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="À la française" class="menu__img">
+
+        <!-- Presentation du restaurant -->
         <div class="menu__elt">
             <div class="menu__elt__header">
+
+                <!-- Titre du restaurant -->
                 <h1 class="menu__elt__header__title">À la française</h1>
+
+                <!-- Like -->
                 <span class="like">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-solid fa-heart"></i>
                 </span>
             </div>
+
+            <!-- Contenu du restaurant -->
             <div class="menu__content">
+
+                <!-- Entree -->
                 <h3 class="menu__content__title">Entrées</h3>
                 <hr class="menu__content__lign"></hr>
-                <div class="menu__card">
+
+                <!-- Choix 1 -->
+                <div class="menu__card card_1">
                     <div class="menu__card__content">
                         <p class="menu__card__content__name">Tartare de poulpe acidulé</p>
                         <p class="menu__card__content__description">Aux zests d'orange</p>
@@ -38,65 +66,125 @@
                         </span>
                     </div>
                 </div>
-                <div class="menu__card">
+
+                <!-- Choix 2 -->
+                <div class="menu__card card_2">
                     <div class="menu__card__content">
                         <p class="menu__card__content__name">Velouté de légumes d'antan</p>
                         <p class="menu__card__content__description">Carotte, panais, topinambour</p>
                     </div>
                     <p class="menu__card__price">35€</p>
+                    <div class="menu__card__validation">
+                        <span class="menu__card__validation__icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class="menu__card">
+
+                <!-- Choix 3 -->
+                <div class="menu__card card_3">
                     <div class="menu__card__content">
                         <p class="menu__card__content__name">Soupe à l'oignon</p>
                         <p class="menu__card__content__description">Revisitée</p>
                     </div>
                     <p class="menu__card__price">20€</p>
+                    <div class="menu__card__validation">
+                        <span class="menu__card__validation__icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
                 </div>
+
+                <!-- Plat -->
                 <h3 class="menu__content__title">Plats</h3>
                 <hr class="menu__content__lign"></hr>
-                <div class="menu__card">
+
+                <!-- Choix 1 -->
+                <div class="menu__card card_1">
                     <div class="menu__card__content">
                         <p class="menu__card__content__name">Coquilles Saint-Jacques</p>
                         <p class="menu__card__content__description">Accompagnées d'une purée de panais</p>
                     </div>
                     <p class="menu__card__price">40€</p>
+                    <div class="menu__card__validation">
+                        <span class="menu__card__validation__icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class="menu__card">
+
+                <!-- Choix 2 -->
+                <div class="menu__card card_2">
                     <div class="menu__card__content">
                         <p class="menu__card__content__name">Magret de canard</p>
                         <p class="menu__card__content__description">Et parmentier de pommes de terre</p>
                     </div>
                     <p class="menu__card__price">35€</p>
+                    <div class="menu__card__validation">
+                        <span class="menu__card__validation__icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class="menu__card">
+
+                <!-- Choix 3 -->
+                <div class="menu__card card_3">
                     <div class="menu__card__content">
                         <p class="menu__card__content__name">Pigeonneau d’Ille-et-Vilaine</p>
                         <p class="menu__card__content__description">Sur son lit de gnocchis aux légumes</p>
                     </div>
                     <p class="menu__card__price">44€</p>
+                    <div class="menu__card__validation">
+                        <span class="menu__card__validation__icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
                 </div>
+
+                <!-- Dessert -->
                 <h3 class="menu__content__title">Desserts</h3>
                 <hr class="menu__content__lign"></hr>
-                <div class="menu__card">
+
+                <!-- Choix 1 -->
+                <div class="menu__card card_1">
                     <div class="menu__card__content">
                         <p class="menu__card__content__name">Pétales de violettes glacés</p>
                         <p class="menu__card__content__description">Et purée de noisettes</p>
                     </div>
                     <p class="menu__card__price">18€</p>
+                    <div class="menu__card__validation">
+                        <span class="menu__card__validation__icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class="menu__card">
+
+                <!-- Choix 2 -->
+                <div class="menu__card card_2">
                     <div class="menu__card__content">
                         <p class="menu__card__content__name">Fondant au chocolat</p>
                         <p class="menu__card__content__description">Revisitée</p>
                     </div>
                     <p class="menu__card__price">22€</p>
+                    <div class="menu__card__validation">
+                        <span class="menu__card__validation__icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
                 </div>
-                <div class="menu__card">
+
+                <!-- Choix 3 -->
+                <div class="menu__card card_3">
                     <div class="menu__card__content">
                         <p class="menu__card__content__name">Millefeuille croustillant</p>
                         <p class="menu__card__content__description">Myrtilles et pâte d’amande</p>
                     </div>
                     <p class="menu__card__price">23€</p>
+                    <div class="menu__card__validation">
+                        <span class="menu__card__validation__icon">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </span>
+                    </div>
                 </div>
             </div>
             <div class="menu__elt__btn">
@@ -104,6 +192,8 @@
             </div>
         </div>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <img src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood" class="footer__logo">
         <nav class="footer__nav">
