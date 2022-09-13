@@ -30,6 +30,9 @@
         flex-grow: 1;
         padding: 10px;
         padding-right: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         &__name {
             font-weight: 700;
             font-size: $size-medium;
