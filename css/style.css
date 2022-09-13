@@ -451,4 +451,10 @@ button:hover {
   border: 1.5px solid #99E2D0;
 }
 
+@media (min-width: 992px) {
+  .menu__img {
+    height: 500px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
