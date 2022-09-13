@@ -1,34 +1,58 @@
+<!--
+    Louis-Étienne Girard
+    ====================
+         Projet 3
+-->
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ohmyfood</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icon fontawesome -->
     <script src="https://kit.fontawesome.com/0ec9c38a23.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
+    <!-- Loading de la page -->
     <div class="loading">
         <img class="loading__logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood">
         <div class="loading__lign"></div>
     </div>
+
+    <!-- Header -->
     <header class="header">
         <img class="header__logo" src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood">
     </header>
+
+    <!-- Contenu du site -->
     <main class="home">
+
+        <!-- Localisation -->
         <div class="home__localisation">
             <span class="home__localisation__icon"><i class="fa-solid fa-location-dot"></i></span>
             <p class="home__localisation__text">Paris, Belleville</p>
         </div>
+
+        <!-- Présentation du site -->
         <div class="home__reservation">
             <h1 class="home__reservation__title">Réservez le menu qui vous convient</h1>
             <p class="home__reservation__subtitle">Découvrez des restaurants d'exeption, séléctionnés par nos soins.</p>
             <button class="home__reservation__btn">Explorer nos restaurants</button>
         </div>
+
+        <!-- Fonctionnement -->
         <section class="home__section">
             <h2 class="home__section__title">Fonctionnement</h2>
             <div class="home__section__list">
+
+                <!-- Étape 1 -->
                 <div class="stage">
                     <span class="stage__number">1</span>
                     <div class="stage__content">
@@ -36,6 +60,8 @@
                         <p class="stage__content__text">Choisissez un restaurant</p>
                     </div>
                 </div>
+
+                <!-- Étape 2 -->
                 <div class="stage">
                     <span class="stage__number">2</span>
                     <div class="stage__content">
@@ -43,6 +69,8 @@
                         <p class="stage__content__text">Composez votre menu</p>
                     </div>
                 </div>
+
+                <!-- Étape 3 -->
                 <div class="stage">
                     <span class="stage__number">3</span>
                     <div class="stage__content">
@@ -52,9 +80,13 @@
                 </div>
             </div>
         </section>
+
+        <!-- Liste des restaurants -->
         <section class="home__section">
             <h2 class="home__section__title">Restaurants</h2>
             <div class="home__section__list">
+
+                <!-- Restaurant 1 -->
                 <a href="/la-palette-du-gout.html" class="restaurant">
                     <span class="restaurant__new">Nouveau</span>
                     <div class="restaurant__elt">
@@ -71,6 +103,8 @@
                         </div>
                     </div>
                 </a>
+
+                <!-- Restaurant 2 -->
                 <a href="/la-note-enchantee.html" class="restaurant">
                     <span class="restaurant__new">Nouveau</span>
                     <div class="restaurant__elt">
@@ -87,6 +121,8 @@
                         </div>
                     </div>
                 </a>
+
+                <!-- Restaurant 3 -->
                 <a href="/a-la-francaise.html" class="restaurant">
                     <div class="restaurant__elt">
                         <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française" class="restaurant__elt__img"/>
@@ -102,6 +138,8 @@
                         </div>
                     </div>
                 </a>
+
+                <!-- Restaurant 4 -->
                 <a href="/le-delice-des-sens.html" class="restaurant">
                     <div class="restaurant__elt">
                         <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" class="restaurant__elt__img"/>
@@ -120,6 +158,8 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <img src="images/logo/ohmyfood@2x.svg" alt="Ohmyfood" class="footer__logo">
         <nav class="footer__nav">
