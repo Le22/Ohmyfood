@@ -37,11 +37,17 @@
             font-weight: 700;
             font-size: $size-medium;
             margin: 0;
+            white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         }
         &__description {
             margin: 5px 0 2px 0;
             font-size: $size-min;
             font-weight: 200;
+            white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         } 
     } 
 
