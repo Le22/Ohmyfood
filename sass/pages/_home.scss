@@ -16,7 +16,12 @@
 
         // nom loc
         &__text {
+            margin: 14px 0;
             font-size: $size-min;
+            border: none;
+            background-color:  darken($color-background, 4.5);
+            padding: 0;
+            width: 100px;
         }
     }
 
