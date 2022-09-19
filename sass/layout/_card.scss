@@ -78,13 +78,8 @@
     }
 
     // clic de la carte -> joué la validation du menu
-    &:active &__validation {
-        @include validation;
-    }
     &:hover &__validation {
-        @include desktop-only {
-            @include validation;
-        }
+        @include validation;
     }
 }
 

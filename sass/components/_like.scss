@@ -30,12 +30,7 @@
         opacity: 1;
     }
 
-    &:active {
+    &:hover {
         @include like;
     }
-    &:hover {
-        @include desktop-only {
-            @include like;
-        }
-    } 
 }
