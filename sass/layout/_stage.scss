@@ -50,17 +50,21 @@
             }
         }
     }
+    // changement couleur
+    &:hover {
+        cursor: pointer;
+        .stage {
+            &__content {
+                background-color: lighten($color-primary, 35);
+                &__icon {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
 }
 
 // dernière étape
 .stage:last-of-type {
     margin-bottom: 20px;
-
-    // changement couleur
-    .stage__content {
-        background-color: lighten($color-primary, 35);
-        &__icon {
-            color: $color-primary;
-        }
-    }
 }
